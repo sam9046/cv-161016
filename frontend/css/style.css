@@ -1956,6 +1956,11 @@ form label.error {
     }
 }
 
+.portrait-img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
 /* Slider */
 .sc-logo {
     /*margin-top: 0px;
