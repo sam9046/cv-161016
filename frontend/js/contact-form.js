@@ -39,12 +39,19 @@
                 success: function () {
                     $('.successContent').fadeIn(1000);
                     $('.errorContent').fadeOut(500);
+                    $('.serverErrorContent').fadeOut(500);
+                },
+                error: function(data) {
+                    $('.serverErrorContent').fadeIn(1000);
+                    $('.successContent').fadeOut(500);
+                    $('.errorContent').fadeOut(500);
                 }
             });
         }
         else {
             $('.errorContent').fadeIn(1000);
             $('.successContent').fadeOut(500);
+            $('.serverErrorContent').fadeOut(500);
         }
         return false;
     });

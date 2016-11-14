@@ -655,7 +655,7 @@ form label.error {
     font-weight: 400;
 }
 
-.successContent, .errorContent {
+.successContent, .errorContent, .serverErrorContent {
     margin-bottom: 20px;
     display: none;
     text-transform: none;
