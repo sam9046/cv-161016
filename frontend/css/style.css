@@ -2959,13 +2959,19 @@ ul.portfolio-btn-wraper, .portfolio-btn-wraper {
 
 /*  Client Logo        ||---------------------------- */
 .client-logo {
-    height: 90px;
+    margin: 15px;
     text-align: center;
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    justify-content: center;
 }
 
-    .client-logo img {
-        height: 100%;
-    }
+.client-logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
 
 
