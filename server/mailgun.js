@@ -10,8 +10,8 @@ var mailgun = function() {};
 mailgun.prototype.sendMail = function sendMail(emailBody, cb) {
     var jsonEmailBody = JSON.parse(emailBody);
     var msg = {
-        from: "sam@website",
-        to: 'samcackett@gmail.com.com', // An array if you have multiple recipients.
+        from: jsonEmailBody.email,
+        to: 'samcackett@gmail.com', // An array if you have multiple recipients.
         subject: jsonEmailBody.subject,
         //You can use "text:" to send plain-text content. It's oldschool!
         text: jsonEmailBody.name + jsonEmailBody.email + jsonEmailBody.message
