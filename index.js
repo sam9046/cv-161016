@@ -8,7 +8,7 @@ var mailgun = new Mailgun();
 // create application/json parser
 var jsonParser = bodyParser.json();
 
-app.use(express.static('../frontend'));
+app.use(express.static('frontend/'));
 
 app.post('/email', jsonParser, function(req, res){
   mailgun.sendMail(JSON.stringify(req.body), function(err, data) {
