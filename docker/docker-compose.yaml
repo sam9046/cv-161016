@@ -1,0 +1,10 @@
+version: "3"
+services:
+  web:
+    build: ./node
+    ports:
+     - "8080:8080"
+#    volumes:
+#     - ./web:/code # modified here to take into account the new app path
+    environment:
+     - NODE_ENV=production
