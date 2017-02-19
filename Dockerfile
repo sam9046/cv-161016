@@ -8,10 +8,10 @@ WORKDIR /usr/src/app
 COPY . /usr/src/app
 
 # Install PM2
-RUN npm install -g pm2
+RUN npm install -g --quiet pm2
 
 # Install app dependencies
-RUN npm install
+RUN npm install --quiet
 
 EXPOSE 8080
 
