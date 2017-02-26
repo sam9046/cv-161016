@@ -17,5 +17,7 @@ services:
       - "443:443"
     volumes:
      - /usr/share/nginx/html:/usr/share/nginx/html
+     - /etc/letsencrypt:/etc/letsencrypt
+     - /etc/ssl:/etc/ssl
     environment:
       - DOMAIN_NAME=samcackett.com
