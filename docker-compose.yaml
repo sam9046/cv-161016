@@ -5,8 +5,6 @@ services:
     build: .
     ports:
       - "8080:8080"
-#    volumes:
-#     - ./web:/code # modified here to take into account the new app path
     environment:
       - NODE_ENV=production
 
@@ -17,8 +15,7 @@ services:
     ports:
       - "80:80"
       - "443:443"
-#    volumes:
-#      - /etc/nginx/psw:/etc/nginx/psw
-#      - /etc/nginx/ssl:/etc/nginx/ssl
+    volumes:
+     - /usr/share/nginx/html:/usr/share/nginx/html
     environment:
       - DOMAIN_NAME=samcackett.com
