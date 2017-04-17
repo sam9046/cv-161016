@@ -75,17 +75,18 @@
     z-index: 99;
 }
 .navbar-item {
+    display: none;
     float: none;
+    position: relative;
+    margin-bottom: 0;
 }
 .navbar-list {
     list-style: none;
     margin-bottom: 0; }
 .navbar-item:first-child {
+    display: block;
     margin-left: 20px;
 }
-.navbar-item {
-    position: relative;
-    margin-bottom: 0; }
 .navbar-link {
     text-transform: uppercase;
     font-size: 11px;
@@ -103,5 +104,6 @@
     .navbar > .container {
         width: 100%; }
     .navbar-item {
+        display: block;
         float: left; }
 }
